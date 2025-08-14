@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Reporter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    <!-- ✨ NEW: Load marked.js for Markdown rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+    <div class="chat-container">
+        <header>
+            <h1>📰 AI News Reporter</h1>
+            <p>ถามคำถามเกี่ยวกับข่าวสารล่าสุด แล้ว AI จะสรุปให้คุณฟัง</p>
+        </header>
+
+        <main id="chat-box" class="chat-box">
+            <div class="chat-message bot">
+                <div class="message-content">
+                    สวัสดีครับ! ผมคือ AI Reporter มีอะไรให้ช่วยสรุปข่าววันนี้ไหมครับ?
+                </div>
+            </div>
+        </main>
+
+        <!-- ✨ NEW: Suggestion Chips -->
+        <div class="suggestion-chips">
+            <div class="chip">สรุปข่าวเด่นวันนี้</div>
+            <div class="chip">มีอะไรใหม่ในวงการเทคโนโลยี?</div>
+            <div class="chip">เศรษฐกิจโลกเป็นอย่างไรบ้าง</div>
+        </div>
+
+        <footer>
+            <form id="chat-form" class="chat-form">
+                <input type="text" id="user-input" placeholder="พิมพ์คำถามของคุณที่นี่..." autocomplete="off" required>
+                <button type="submit" id="send-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+                        <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+                    </svg>
+                </button>
+            </form>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
