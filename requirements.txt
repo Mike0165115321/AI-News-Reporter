@@ -16,3 +16,4 @@ fastapi
 uvicorn[standard]
 lxml_html_clean
 pydantic-settings
+tqdm

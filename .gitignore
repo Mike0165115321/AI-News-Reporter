@@ -9,6 +9,8 @@ __pycache__/
 # IDE / Editor specific
 .vscode/
 .idea/
-
+venv1
+.venv1/
+.venv1
 # RAG Data (Generated files)
 data/news_index/
